@@ -4,7 +4,7 @@ pipeline{
         pollSCM('* * * * *')
     }
     stages{
-        stage('git clone'){
+        stage('vcs'){
             steps{
                 git url: 'https://github.com/peddiraju3122b/devopsworkshop.git',
                 branch: 'main'
