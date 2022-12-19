@@ -12,13 +12,13 @@ pipeline{
         }
         stage('image build'){
             steps{
-                sh 'docker image build -t peddiraju3122b/devopsworkshop:dev .'
+                sh 'docker image build -t peddiraju3122b/devopsworkshop:DEV .'
 
             }
         }
         stage('push image to registry'){
             steps{
-                sh 'docker image push peddiraju3122b/devopsworkshop:dev'
+                sh 'docker image push peddiraju3122b/devopsworkshop:DEV'
             }
         }
     }
